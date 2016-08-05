@@ -1,0 +1,18 @@
+|FSM
+clk => Cstate~1.DATAIN
+rst => Cstate.OUTPUTSELECT
+rst => Cstate.OUTPUTSELECT
+rst => Cstate.OUTPUTSELECT
+rst => Cstate.OUTPUTSELECT
+rst => K1.OUTPUTSELECT
+rst => K2.OUTPUTSELECT
+A => always3.IN0
+A => Selector1.IN2
+A => Selector3.IN1
+A => always2.IN0
+A => Selector0.IN2
+A => Selector2.IN1
+K1 <= K1.DB_MAX_OUTPUT_PORT_TYPE
+K2 <= K2.DB_MAX_OUTPUT_PORT_TYPE
+
+

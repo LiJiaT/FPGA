@@ -1,0 +1,20 @@
+
+State Machine - |I2C|out16hi:B|mstate
+Name mstate.sbit4 mstate.sbit3 mstate.sbit2 mstate.sbit1 mstate.sbit0 
+mstate.sbit0 0 0 0 0 0 
+mstate.sbit1 0 0 0 1 1 
+mstate.sbit2 0 0 1 0 1 
+mstate.sbit3 0 1 0 0 1 
+mstate.sbit4 1 0 0 0 1 
+
+State Machine - |I2C|pstoda:A|state
+Name state.ready state.IDLE state.stop state.bit5 state.bit4 state.bit3 state.bit2 state.bit1 state.start 
+state.ready 0 0 0 0 0 0 0 0 0 
+state.start 1 0 0 0 0 0 0 0 1 
+state.bit1 1 0 0 0 0 0 0 1 0 
+state.bit2 1 0 0 0 0 0 1 0 0 
+state.bit3 1 0 0 0 0 1 0 0 0 
+state.bit4 1 0 0 0 1 0 0 0 0 
+state.bit5 1 0 0 1 0 0 0 0 0 
+state.stop 1 0 1 0 0 0 0 0 0 
+state.IDLE 1 1 0 0 0 0 0 0 0 

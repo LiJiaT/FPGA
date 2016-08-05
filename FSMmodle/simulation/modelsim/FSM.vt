@@ -1,0 +1,68 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "07/20/2016 10:23:26"
+                                                                                
+// Verilog Test Bench template for design : FSM
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ns/ 1 ps
+module FSM_vlg_tst();
+// constants                                           
+// test vector input registers
+reg A;
+reg clk;
+reg rst;
+// wires                                               
+wire K1;
+wire K2;
+
+// assign statements (if any)                          
+FSM i1 (
+// port map - connection between master ports and signals/registers   
+	.A(A),
+	.K1(K1),
+	.K2(K2),
+	.clk(clk),
+	.rst(rst)
+);
+initial                                                
+begin                                                  
+A = 0;
+rst = 1;
+clk = 0;
+#22 rst = 0;
+#133 rst = 1;                       
+end       
+
+always #50 clk = ~clk;
+
+initial #100000 $stop;
+                                             
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+#30 A = {$random}%2;
+#(3*50 + 12);                                      
+end                                                    
+endmodule
+

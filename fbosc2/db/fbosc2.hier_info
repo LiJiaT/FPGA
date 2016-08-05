@@ -1,0 +1,9 @@
+|fbosc2
+clk => y1~reg0.CLK
+clk => y2~reg0.CLK
+rst => y1~reg0.ACLR
+rst => y2~reg0.PRESET
+y1 <= y1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+y2 <= y2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

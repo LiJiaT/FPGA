@@ -1,0 +1,125 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'pstoda:A|scl'
+Slack : -1.371
+TNS   : -10.270
+
+Type  : Slow 1200mV 85C Model Setup 'sclk'
+Slack : -1.310
+TNS   : -4.061
+
+Type  : Slow 1200mV 85C Model Setup 'pstoda:A|link_sda'
+Slack : -0.242
+TNS   : -0.242
+
+Type  : Slow 1200mV 85C Model Hold 'pstoda:A|scl'
+Slack : -1.061
+TNS   : -3.572
+
+Type  : Slow 1200mV 85C Model Hold 'pstoda:A|link_sda'
+Slack : -0.772
+TNS   : -3.443
+
+Type  : Slow 1200mV 85C Model Hold 'sclk'
+Slack : -0.007
+TNS   : -0.007
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sclk'
+Slack : -3.000
+TNS   : -16.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pstoda:A|scl'
+Slack : -1.000
+TNS   : -9.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pstoda:A|link_sda'
+Slack : -1.000
+TNS   : -6.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pstoda:A|ack'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Setup 'pstoda:A|scl'
+Slack : -1.111
+TNS   : -8.156
+
+Type  : Slow 1200mV 0C Model Setup 'sclk'
+Slack : -1.057
+TNS   : -2.907
+
+Type  : Slow 1200mV 0C Model Setup 'pstoda:A|link_sda'
+Slack : -0.191
+TNS   : -0.191
+
+Type  : Slow 1200mV 0C Model Hold 'pstoda:A|scl'
+Slack : -0.948
+TNS   : -3.195
+
+Type  : Slow 1200mV 0C Model Hold 'pstoda:A|link_sda'
+Slack : -0.677
+TNS   : -2.868
+
+Type  : Slow 1200mV 0C Model Hold 'sclk'
+Slack : -0.007
+TNS   : -0.007
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sclk'
+Slack : -3.000
+TNS   : -16.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pstoda:A|scl'
+Slack : -1.000
+TNS   : -9.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pstoda:A|link_sda'
+Slack : -1.000
+TNS   : -6.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pstoda:A|ack'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Setup 'pstoda:A|scl'
+Slack : -0.371
+TNS   : -2.581
+
+Type  : Fast 1200mV 0C Model Setup 'sclk'
+Slack : -0.270
+TNS   : -0.270
+
+Type  : Fast 1200mV 0C Model Setup 'pstoda:A|link_sda'
+Slack : 0.146
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'pstoda:A|scl'
+Slack : -0.663
+TNS   : -2.258
+
+Type  : Fast 1200mV 0C Model Hold 'pstoda:A|link_sda'
+Slack : -0.464
+TNS   : -2.202
+
+Type  : Fast 1200mV 0C Model Hold 'sclk'
+Slack : -0.147
+TNS   : -0.823
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sclk'
+Slack : -3.000
+TNS   : -16.869
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pstoda:A|scl'
+Slack : -1.000
+TNS   : -9.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pstoda:A|link_sda'
+Slack : -1.000
+TNS   : -6.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pstoda:A|ack'
+Slack : -1.000
+TNS   : -4.000
+
+------------------------------------------------------------

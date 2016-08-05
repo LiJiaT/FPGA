@@ -1,0 +1,232 @@
+# Reading F:/Quartus_II/modelsim_ase/tcl/vsim/pref.tcl 
+# do I2C_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying F:\Quartus_II\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied F:\Quartus_II\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Hpy/Desktop/FPGAProject/Training {C:/Users/Hpy/Desktop/FPGAProject/Training/I2C.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module I2C
+# 
+# Top level modules:
+# 	I2C
+# vlog -vlog01compat -work work +incdir+C:/Users/Hpy/Desktop/FPGAProject/Training {C:/Users/Hpy/Desktop/FPGAProject/Training/pstoda.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pstoda
+# 
+# Top level modules:
+# 	pstoda
+# vlog -vlog01compat -work work +incdir+C:/Users/Hpy/Desktop/FPGAProject/Training {C:/Users/Hpy/Desktop/FPGAProject/Training/out16hi.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module out16hi
+# 
+# Top level modules:
+# 	out16hi
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Hpy/Desktop/FPGAProject/Training/simulation/modelsim {C:/Users/Hpy/Desktop/FPGAProject/Training/simulation/modelsim/I2C.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb 
+# Loading work.tb
+# Loading work.I2C
+# Loading work.pstoda
+# Loading work.out16hi
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Running testbench
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# I am in sdabit2.
+# I am in sdabit3.
+# I am in sdastop.
+# I am in sdabit0.
+# I am in sdabit1.
+# Break in Module tb at C:/Users/Hpy/Desktop/FPGAProject/Training/simulation/modelsim/I2C.vt line 64
+# Simulation Breakpoint: Break in Module tb at C:/Users/Hpy/Desktop/FPGAProject/Training/simulation/modelsim/I2C.vt line 64
+# MACRO ./I2C_run_msim_rtl_verilog.do PAUSED at line 19

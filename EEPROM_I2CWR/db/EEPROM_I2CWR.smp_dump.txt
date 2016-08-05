@@ -1,0 +1,51 @@
+
+State Machine - |EEPROM_I2CWR|sh8in_state
+Name sh8in_state.sh8in_end sh8in_state.sh8in_bit0 sh8in_state.sh8in_bit1 sh8in_state.sh8in_bit2 sh8in_state.sh8in_bit3 sh8in_state.sh8in_bit4 sh8in_state.sh8in_bit5 sh8in_state.sh8in_bit6 sh8in_state.sh8in_bit7 sh8in_state.sh8in_begin 
+sh8in_state.sh8in_begin 0 0 0 0 0 0 0 0 0 0 
+sh8in_state.sh8in_bit7 0 0 0 0 0 0 0 0 1 1 
+sh8in_state.sh8in_bit6 0 0 0 0 0 0 0 1 0 1 
+sh8in_state.sh8in_bit5 0 0 0 0 0 0 1 0 0 1 
+sh8in_state.sh8in_bit4 0 0 0 0 0 1 0 0 0 1 
+sh8in_state.sh8in_bit3 0 0 0 0 1 0 0 0 0 1 
+sh8in_state.sh8in_bit2 0 0 0 1 0 0 0 0 0 1 
+sh8in_state.sh8in_bit1 0 0 1 0 0 0 0 0 0 1 
+sh8in_state.sh8in_bit0 0 1 0 0 0 0 0 0 0 1 
+sh8in_state.sh8in_end 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |EEPROM_I2CWR|stop_state
+Name stop_state.stop_end stop_state.stop_bit stop_state.stop_begin 
+stop_state.stop_begin 0 0 0 
+stop_state.stop_bit 0 1 1 
+stop_state.stop_end 1 0 1 
+
+State Machine - |EEPROM_I2CWR|sh8out_state
+Name sh8out_state.sh8out_end sh8out_state.sh8out_bit0 sh8out_state.sh8out_bit1 sh8out_state.sh8out_bit2 sh8out_state.sh8out_bit3 sh8out_state.sh8out_bit4 sh8out_state.sh8out_bit5 sh8out_state.sh8out_bit6 sh8out_state.sh8out_bit7 
+sh8out_state.sh8out_bit7 0 0 0 0 0 0 0 0 0 
+sh8out_state.sh8out_bit6 0 0 0 0 0 0 0 1 1 
+sh8out_state.sh8out_bit5 0 0 0 0 0 0 1 0 1 
+sh8out_state.sh8out_bit4 0 0 0 0 0 1 0 0 1 
+sh8out_state.sh8out_bit3 0 0 0 0 1 0 0 0 1 
+sh8out_state.sh8out_bit2 0 0 0 1 0 0 0 0 1 
+sh8out_state.sh8out_bit1 0 0 1 0 0 0 0 0 1 
+sh8out_state.sh8out_bit0 0 1 0 0 0 0 0 0 1 
+sh8out_state.sh8out_end 1 0 0 0 0 0 0 0 1 
+
+State Machine - |EEPROM_I2CWR|head_state
+Name head_state.head_end head_state.head_bit head_state.head_begin 
+head_state.head_begin 0 0 0 
+head_state.head_bit 0 1 1 
+head_state.head_end 1 0 1 
+
+State Machine - |EEPROM_I2CWR|main_state
+Name main_state.Ackn main_state.Stop main_state.Data_read main_state.Ctrl_read main_state.Read_start main_state.Data_write main_state.Addr_write main_state.Ctrl_write main_state.Write_start main_state.Ready main_state.IDLE 
+main_state.IDLE 0 0 0 0 0 0 0 0 0 0 0 
+main_state.Ready 0 0 0 0 0 0 0 0 0 1 1 
+main_state.Write_start 0 0 0 0 0 0 0 0 1 0 1 
+main_state.Ctrl_write 0 0 0 0 0 0 0 1 0 0 1 
+main_state.Addr_write 0 0 0 0 0 0 1 0 0 0 1 
+main_state.Data_write 0 0 0 0 0 1 0 0 0 0 1 
+main_state.Read_start 0 0 0 0 1 0 0 0 0 0 1 
+main_state.Ctrl_read 0 0 0 1 0 0 0 0 0 0 1 
+main_state.Data_read 0 0 1 0 0 0 0 0 0 0 1 
+main_state.Stop 0 1 0 0 0 0 0 0 0 0 1 
+main_state.Ackn 1 0 0 0 0 0 0 0 0 0 1 

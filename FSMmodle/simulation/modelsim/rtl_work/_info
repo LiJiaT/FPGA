@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Hpy\Desktop\FPGAProject\Training\FSMmodle\simulation\modelsim
+vFSM
+IHbIeiJ=S>T7aU?0oL3iOo2
+V`i:CHh0<g_3J1KX=o?6`l1
+Z1 dC:\Users\Hpy\Desktop\FPGAProject\Training\FSMmodle\simulation\modelsim
+w1468982271
+8C:/Users/Hpy/Desktop/FPGAProject/Training/FSMmodle/FSM.v
+FC:/Users/Hpy/Desktop/FPGAProject/Training/FSMmodle/FSM.v
+L0 30
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@f@s@m
+!i10b 1
+!s100 80@ZTgUDiHVFg<`DHzi2W2
+!s85 0
+!s108 1468982339.296000
+!s107 C:/Users/Hpy/Desktop/FPGAProject/Training/FSMmodle/FSM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Hpy/Desktop/FPGAProject/Training/FSMmodle|-O0|C:/Users/Hpy/Desktop/FPGAProject/Training/FSMmodle/FSM.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/Hpy/Desktop/FPGAProject/Training/FSMmodle -O0
+vFSM_vlg_tst
+!i10b 1
+!s100 KLMGXV8iJAIX4hPkaG2L71
+ITU;D:8FH8WHPUWCJoGlCg2
+VJL2hi<WIT;zi`PD;EIlBc1
+R1
+w1468981909
+8C:/Users/Hpy/Desktop/FPGAProject/Training/FSMmodle/simulation/modelsim/FSM.vt
+FC:/Users/Hpy/Desktop/FPGAProject/Training/FSMmodle/simulation/modelsim/FSM.vt
+L0 28
+R2
+r1
+!s85 0
+31
+!s108 1468982339.437000
+!s107 C:/Users/Hpy/Desktop/FPGAProject/Training/FSMmodle/simulation/modelsim/FSM.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Hpy/Desktop/FPGAProject/Training/FSMmodle/simulation/modelsim|-O0|C:/Users/Hpy/Desktop/FPGAProject/Training/FSMmodle/simulation/modelsim/FSM.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+C:/Users/Hpy/Desktop/FPGAProject/Training/FSMmodle/simulation/modelsim -O0
+n@f@s@m_vlg_tst

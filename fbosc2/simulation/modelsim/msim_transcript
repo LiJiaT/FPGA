@@ -1,0 +1,58 @@
+# Reading F:/Quartus_II/modelsim_ase/tcl/vsim/pref.tcl 
+# do fbosc2_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying F:\Quartus_II\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied F:\Quartus_II\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2 {C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2/fbosc2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fbosc2
+# 
+# Top level modules:
+# 	fbosc2
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2/simulation/modelsim {C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2/simulation/modelsim/fbosc2.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fbosc2_vlg_tst
+# 
+# Top level modules:
+# 	fbosc2_vlg_tst
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  fbosc2_vlg_tst
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps fbosc2_vlg_tst 
+# Loading work.fbosc2_vlg_tst
+# Loading work.fbosc2
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break in Module fbosc2_vlg_tst at C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2/simulation/modelsim/fbosc2.vt line 51
+# Simulation Breakpoint: Break in Module fbosc2_vlg_tst at C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2/simulation/modelsim/fbosc2.vt line 51
+# MACRO ./fbosc2_run_msim_rtl_verilog.do PAUSED at line 17
+vlog -vlog01compat -work work +incdir+C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2 -O0 C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2/fbosc2.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fbosc2
+# 
+# Top level modules:
+# 	fbosc2
+vlog -vlog01compat -work work +incdir+C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2/simulation/modelsim -O0 C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2/simulation/modelsim/fbosc2.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fbosc2_vlg_tst
+# 
+# Top level modules:
+# 	fbosc2_vlg_tst
+restart -f
+# Loading work.fbosc2_vlg_tst
+# Loading work.fbosc2
+run -all
+# Break in Module fbosc2_vlg_tst at C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2/simulation/modelsim/fbosc2.vt line 51
+run -all

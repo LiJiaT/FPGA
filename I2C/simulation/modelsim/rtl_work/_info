@@ -1,0 +1,86 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Hpy\Desktop\FPGAProject\Training\simulation\modelsim
+vI2C
+Ia@C4iilV@jiNmOEKN92Y:0
+V4[P<=a@YUJz_RP0k4QRHB1
+Z1 dC:\Users\Hpy\Desktop\FPGAProject\Training\simulation\modelsim
+w1468891725
+8C:/Users/Hpy/Desktop/FPGAProject/Training/I2C.v
+FC:/Users/Hpy/Desktop/FPGAProject/Training/I2C.v
+L0 33
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@i2@c
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/Hpy/Desktop/FPGAProject/Training -O0
+!i10b 1
+!s100 ckL7khdAZ]=KD25[R6KL=0
+!s85 0
+!s108 1468934259.788000
+!s107 C:/Users/Hpy/Desktop/FPGAProject/Training/I2C.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Hpy/Desktop/FPGAProject/Training|C:/Users/Hpy/Desktop/FPGAProject/Training/I2C.v|
+!s101 -O0
+vout16hi
+IbFnjRNgUgz?PQiJDl`YHK1
+VT1:JInc2X0ZW5d6DOfNin1
+R1
+w1468899218
+8C:/Users/Hpy/Desktop/FPGAProject/Training/out16hi.v
+FC:/Users/Hpy/Desktop/FPGAProject/Training/out16hi.v
+L0 30
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 KH<zZX0m>NPlRIzjKE09o3
+!s85 0
+!s108 1468934260.021000
+!s107 C:/Users/Hpy/Desktop/FPGAProject/Training/out16hi.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Hpy/Desktop/FPGAProject/Training|C:/Users/Hpy/Desktop/FPGAProject/Training/out16hi.v|
+!s101 -O0
+vpstoda
+IFgNdPb9n9abfb`Pj0m`ko1
+V7cSgH40<1h3]]QL687LFO0
+R1
+w1468934225
+8C:/Users/Hpy/Desktop/FPGAProject/Training/pstoda.v
+FC:/Users/Hpy/Desktop/FPGAProject/Training/pstoda.v
+L0 30
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 <=fjRE7D`PbcRQGj219H30
+!s85 0
+!s108 1468934259.898000
+!s107 C:/Users/Hpy/Desktop/FPGAProject/Training/pstoda.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Hpy/Desktop/FPGAProject/Training|C:/Users/Hpy/Desktop/FPGAProject/Training/pstoda.v|
+!s101 -O0
+vtb
+!i10b 1
+!s100 zoVdzjEb@H=VD>0=8lFe70
+I^FJXbGn]XT:1Bj>iEi<:V1
+VV@Xn<HnSRM[I5c1?BH]3a3
+R1
+w1468851817
+8C:/Users/Hpy/Desktop/FPGAProject/Training/simulation/modelsim/I2C.vt
+FC:/Users/Hpy/Desktop/FPGAProject/Training/simulation/modelsim/I2C.vt
+L0 28
+R2
+r1
+!s85 0
+31
+!s108 1468934260.103000
+!s107 C:/Users/Hpy/Desktop/FPGAProject/Training/simulation/modelsim/I2C.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Hpy/Desktop/FPGAProject/Training/simulation/modelsim|C:/Users/Hpy/Desktop/FPGAProject/Training/simulation/modelsim/I2C.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+C:/Users/Hpy/Desktop/FPGAProject/Training/simulation/modelsim -O0

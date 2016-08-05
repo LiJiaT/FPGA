@@ -1,0 +1,7 @@
+
+State Machine - |FSM|Cstate
+Name Cstate.Clear Cstate.Stop Cstate.Start Cstate.IDLE 
+Cstate.IDLE 0 0 0 0 
+Cstate.Start 0 0 1 1 
+Cstate.Stop 0 1 0 1 
+Cstate.Clear 1 0 0 1 

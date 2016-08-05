@@ -1,0 +1,11 @@
+`timescale 1ns/1ns
+module alu(alu_out,zero,data,accum,alu_ena,opcode);
+output [7:0] alu_out;
+output zero;
+input [7:0] data,accum;
+input [2:0] opcode;
+input alu_ena;
+
+parameter 
+
+endmodule

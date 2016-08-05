@@ -1,0 +1,86 @@
+|I2C
+data[0] => data[0].IN1
+data[1] => data[1].IN1
+data[2] => data[2].IN1
+data[3] => data[3].IN1
+sclk => sclk.IN1
+rst => rst.IN1
+outhigh[0] <= out16hi:B.outhigh
+outhigh[1] <= out16hi:B.outhigh
+outhigh[2] <= out16hi:B.outhigh
+outhigh[3] <= out16hi:B.outhigh
+outhigh[4] <= out16hi:B.outhigh
+outhigh[5] <= out16hi:B.outhigh
+outhigh[6] <= out16hi:B.outhigh
+outhigh[7] <= out16hi:B.outhigh
+outhigh[8] <= out16hi:B.outhigh
+outhigh[9] <= out16hi:B.outhigh
+outhigh[10] <= out16hi:B.outhigh
+outhigh[11] <= out16hi:B.outhigh
+outhigh[12] <= out16hi:B.outhigh
+outhigh[13] <= out16hi:B.outhigh
+outhigh[14] <= out16hi:B.outhigh
+outhigh[15] <= out16hi:B.outhigh
+ack <= pstoda:A.ack
+
+
+|I2C|pstoda:A
+sclk => scl~reg0.CLK
+sclk => ack~reg0.CLK
+sclk => sdabuf.CLK
+sclk => link_sda.CLK
+sclk => state~1.DATAIN
+rst => ack~reg0.ACLR
+rst => sdabuf.PRESET
+rst => link_sda.ACLR
+rst => scl~reg0.PRESET
+rst => state~3.DATAIN
+data[0] => databuf[0].DATAIN
+data[1] => databuf[1].DATAIN
+data[2] => databuf[2].DATAIN
+data[3] => databuf[3].DATAIN
+ack <= ack~reg0.DB_MAX_OUTPUT_PORT_TYPE
+scl <= scl~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sda <= sda.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|I2C|out16hi:B
+scl => StartFlag.OUTPUTSELECT
+scl => pdata[0].CLK
+scl => pdata[1].CLK
+scl => pdata[2].CLK
+scl => pdata[3].CLK
+scl => EndFlag.DATAIN
+scl => mstate~2.DATAIN
+scl => pdatebuf[0].ENA
+scl => pdatebuf[1].ENA
+scl => pdatebuf[2].ENA
+scl => pdatebuf[3].ENA
+sda => pdata.DATAB
+sda => pdata.DATAB
+sda => pdata.DATAB
+sda => pdata.DATAB
+sda => pdatebuf[0].CLK
+sda => pdatebuf[1].CLK
+sda => pdatebuf[2].CLK
+sda => pdatebuf[3].CLK
+sda => EndFlag.CLK
+sda => StartFlag.CLK
+outhigh[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+outhigh[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+outhigh[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+outhigh[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+outhigh[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+outhigh[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+outhigh[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+outhigh[7] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+outhigh[8] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+outhigh[9] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+outhigh[10] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+outhigh[11] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+outhigh[12] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+outhigh[13] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+outhigh[14] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+outhigh[15] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+

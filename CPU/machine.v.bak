@@ -1,0 +1,182 @@
+`timescale 1ns/1ns 
+
+module machine (inc_pc,load_acc,load_pc,rd,wr,load_ir,datactl_ena,halt,clk,ena,opcpde);
+input clk,zero ,ena;
+output inc_pc,load_acc,load_pc,rd,wr,load_ir;
+output datactl_ena, halt;
+
+input [2:0] opcpde;
+
+reg inc_pc,load_acc,load_pc,rd,wr,load_ir;
+reg datactl_ena,halt;
+reg [2:0] state;
+
+parameter HLT = 3'b000,
+				SKZ = 3'b001,
+				ADD = 3'b010,
+				ANDD = 3'b011,
+				XORR = 3'b100,
+				LDA = 3'b101,
+				STO = 3'b110,
+				JMP = 3'b111;
+
+				
+always @(posedge clk)
+begin 
+	if(!ena)
+	begin 
+		state <= HLT;
+		{inc_pc,load_acc,load_Pc,rd} <= 4'b0000;
+		{wr,load_ir,datactl_ena,halt} <= 4'b0000;
+	end
+	else 
+		ctl_cycle;	
+end
+
+
+task ctl_cycle 
+	casex (state)
+	
+	HLT:
+	begin 
+		{inc_pc,load_acc,load_Pc,rd} <= 4'b0001;
+		{wr,load_ir,datactl_ena,halt} <= 4'b0100;
+		state <= SKZ;
+	end
+	
+	SKZ: 
+	begin 
+		{inc_pc,load_acc,load_Pc,rd} <= 4'b0001;
+		{wr,load_ir,datactl_ena,halt} <= 4'b0100;
+		state <= ADD;
+	end
+	
+	ADD:
+	begin 
+		{inc_pc,load_acc,load_Pc,rd} <= 4'b0000;
+		{wr,load_ir,datactl_ena,halt} <= 4'b0000;
+		state <= ANDD;
+	end
+	
+	ANDD:
+	begin 
+		if(opcpde == HLT)
+		begin 
+			{inc_pc,load_acc,load_Pc,rd} <= 4'b1000;
+			{wr,load_ir,datactl_ena,halt} <= 4'b0001;
+		end
+		else 
+		begin 
+			{inc_pc,load_acc,load_Pc,rd} <= 4'b1000;
+			{wr,load_ir,datactl_ena,halt} <= 4'b0000;
+		end
+		state <= XORR;
+	end
+	
+	XORR:
+	begin 
+		if(opcpde == JMP)
+		begin 
+			{inc_pc,load_acc,load_Pc,rd} <= 4'b0010;
+			{wr,load_ir,datactl_ena,halt} <= 4'b0000;
+		end
+		else 
+			if(opcpde == ADD || opcpde == ANDD || opcpde == XORR || opcpde == LDA)
+			begin 
+				{inc_pc,load_acc,load_Pc,rd} <= 4'b0001;
+				{wr,load_ir,datactl_ena,halt} <= 4'b0000;
+			end
+			else 
+				if(opcpde == STO)
+				begin 
+					{inc_pc,load_acc,load_Pc,rd} <= 4'b0000;
+					{wr,load_ir,datactl_ena,halt} <= 4'b0010;
+				end
+				else 
+				begin 
+					{inc_pc,load_acc,load_Pc,rd} <= 4'b0000;
+					{wr,load_ir,datactl_ena,halt} <= 4'b0000;
+				end
+			state <= LDA;
+	end
+	
+	LDA:
+	begin 
+		if(opcpde == ADD || opcpde = ANDD || opcpde == XORR || opcpde == LDA)
+		begin 
+			{inc_pc,load_acc,load_Pc,rd} <= 4'b0101;
+			{wr,load_ir,datactl_ena,halt} <= 4'b0000;
+		end
+		else 
+			if(opcpde == SKZ && zero == 1)
+			begin 
+				{inc_pc,load_acc,load_Pc,rd} <= 4'b1000;
+				{wr,load_ir,datactl_ena,halt} <= 4'b0000;
+			end
+			else 
+				if(opcpde == JMP)
+				begin 
+					{inc_pc,load_acc,load_Pc,rd} <= 4'b1010;
+					{wr,load_ir,datactl_ena,halt} <= 4'b0000;
+				end
+				else 
+					if(opcpde == STO)
+					begin 
+						{inc_pc,load_acc,load_Pc,rd} <= 4'b0000;
+						{wr,load_ir,datactl_ena,halt} <= 4'b1010;
+					end
+					else 
+					begin 
+						{inc_pc,load_acc,load_Pc,rd} <= 4'b0000;
+						{wr,load_ir,datactl_ena,halt} <= 4'b0000;
+					end
+		state <= STO;
+	end
+	
+	STO: 
+	begin 
+		if(opcpde == STO)
+		begin  
+			{inc_pc,load_acc,load_Pc,rd} <= 4'b0000;
+			{wr,load_ir,datactl_ena,halt} <= 4'b0010;
+		end
+		else 
+			if(opcpde == ADD || opcpde == ANDD || opcpde == XORR || opcpde == LDA)
+			begin
+				{inc_pc,load_acc,load_Pc,rd} <= 4'b0001;
+				{wr,load_ir,datactl_ena,halt} <= 4'b0000;
+			end
+			else 
+			begin 
+				{inc_pc,load_acc,load_Pc,rd} <= 4'b0000;
+				{wr,load_ir,datactl_ena,halt} <= 4'b0000;
+			end
+		state <= JMP;
+	end
+	
+	JMP:
+	begin 
+		if(opcpde == SKZ && zero == 1)
+		begin 
+			{inc_pc,load_acc,load_Pc,rd} <= 4'b1000;
+			{wr,load_ir,datactl_ena,halt} <= 4'b0000;
+		end
+		else 
+		begin 
+			{inc_pc,load_acc,load_Pc,rd} <= 4'b0000;
+			{wr,load_ir,datactl_ena,halt} <= 4'b0000;
+		end
+		state <= HLT;
+	end
+	
+	default: 
+	begin 
+		{inc_pc,load_acc,load_Pc,rd} <= 4'b0000;
+		{wr,load_ir,datactl_ena,halt} <= 4'b0000;
+		state <= HLT;
+	end
+	
+	endcase 
+
+
+endmodule 

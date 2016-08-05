@@ -1,0 +1,4 @@
+|osc2
+clk <= clk.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,199 @@
+//******************************************************
+//COPYRIGHT(c)2016,SouthChina university of technology
+//ALL rights reserved.
+//IP LIB INDEX :
+//IP Name		:
+//
+//File name		:pstoda.v
+//Module name 	:pstoda
+//Full name		:
+//
+//Author 		:LeeJT
+//Email			:1164880972@qq.com
+//Data			:
+//Version		:
+//
+//Abstract		:
+//Called by		:Father Module
+//
+//Modification history
+//--------------------------------------------------------
+// //
+// $LOG$
+//
+//********************************************************
+
+//********************************************************
+//DEFINE MODULE PORT //
+//********************************************************
+//
+module pstoda (
+					  //INPUT
+					  sclk,
+					  rst,
+					  data,
+						
+					  //OUTPUT
+						ack,
+						scl,
+						sda
+					  );
+//********************************************************
+//DEFINE PARAMETER //
+//********************************************************
+parameter ready = 8'b0000_0000,
+				start = 8'b0000_0001,
+				bit1 = 8'b0000_0010,
+				bit2 = 8'b0000_0100,
+				bit3 = 8'b0000_1000,
+				bit4 = 8'b0001_0000,
+				bit5 = 8'b0010_0000,
+				stop = 8'b0100_0000,				
+				IDLE = 8'b1000_0000;
+				
+//********************************************************
+//DEFINE INPUT //
+//********************************************************
+input sclk,rst;
+input [3:0] data;
+
+
+//********************************************************
+//DEFINE OUTPUT //
+//********************************************************
+output ack;
+output scl;
+output sda;
+
+
+
+//********************************************************
+//OUTPUT ATRIBUTE //
+//********************************************************
+//REGS
+reg scl,
+		link_sda,
+		ack,
+		sdabuf;
+reg [3:0] databuf;
+reg [7:0] state;
+
+//WIRES
+assign sda = link_sda? sdabuf : 1'b0;
+
+
+//********************************************************
+//MODULE  REGISTERS/WIRES DEFINE //
+//********************************************************
+
+
+
+
+//********************************************************
+//INSTANCE MODULE //
+//********************************************************
+
+
+
+//********************************************************
+//MAIN CODE //
+//********************************************************
+always @(posedge sclk , negedge rst)
+begin 
+	if(!rst)
+		scl <= 1'b1;
+	else 
+		scl <= ~scl;
+end
+
+always @(posedge ack)
+databuf <= data;
+
+always @(posedge ack)
+if(!rst)
+begin 
+	link_data <= 1'b0;
+	state <= ready;
+	sdabuf <= 1'b1;
+	ack <= 1'b0;
+end
+else begin
+	case (state)
+	ready: if (ack)
+				begin 
+					link_sda <= 1'b1;
+					state <= start;
+				end
+			else 
+				begin
+					link_sda <= 1'b0;
+					state <= ready;
+					ack <= 1'b1;
+				end
+	start: if(scl & ack)
+				begin
+				sdabuf <= 1'b0;
+				state <= bit1;
+				end
+	bit1: if(!scl)
+				begin
+				sdabuf <= databuf[3];
+				state <= bit2;
+				sck <=1'b0;
+				end
+			else state <= bit1;
+	bit2: if(!scl)
+				begin
+					sdabuf <= databuf[2];
+					state <= bit3;
+				end
+			else state <= bit2;
+	bit2: if(!scl)
+				begin
+					sdabuf <= databuf[1];
+					state <= bit4;
+				end
+			else state <= bit3;
+	bit4: if(!scl)
+				begin 
+					sdabuf <= databuf[0];
+					state <= bit5;
+				end
+				else state <= bit4;
+	bit5: if(!scl)
+				begin 
+					sdabuf <= 1'b0;
+					state M= stop;
+				end
+				else state <= bit5;
+				
+	stop: if(!scl)
+				begin 
+					sdabuf <= 1'b1;
+					state <= IDLE;
+				end
+				else state <= stop;
+	IDLE: begin 
+				link_data <= 1'b0;
+				sdabuf <=1'b1;
+				state <= ready;
+			end
+	default: begin 
+					link_sda <= 1'b0;
+					sdabuf <= 1'b1;
+					state <= ready;
+				end
+end
+
+//********************************************************//
+endmodule
+
+
+
+
+
+
+
+
+
+

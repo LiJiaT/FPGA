@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Tue Jul 19 21:17:09 2016
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : I2C
+Top-level Entity Name : I2C
+Family : Cyclone IV GX
+Total logic elements : 57
+    Total combinational functions : 45
+    Dedicated logic registers : 32
+Total registers : 32
+Total pins : 23
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0

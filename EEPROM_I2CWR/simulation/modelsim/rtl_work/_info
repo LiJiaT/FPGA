@@ -1,0 +1,89 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Hpy\Desktop\FPGAProject\Training\EEPROM_I2CWR\simulation\modelsim
+vEEPROM
+!i10b 1
+!s100 oS]0PE39RO_j56Q_DKiSo3
+I@olNRDR67;fioGQi`z;P`0
+VUB:3No6_cBO<26CRdaM0<1
+Z1 dC:\Users\Hpy\Desktop\FPGAProject\Training\EEPROM_I2CWR\simulation\modelsim
+Z2 w1469582947
+Z3 8C:/Users/Hpy/Desktop/FPGAProject/Training/EEPROM_I2CWR/simulation/modelsim/EEPROM_I2CWR.vt
+Z4 FC:/Users/Hpy/Desktop/FPGAProject/Training/EEPROM_I2CWR/simulation/modelsim/EEPROM_I2CWR.vt
+L0 61
+Z5 OV;L;10.1d;51
+r1
+!s85 0
+31
+Z6 !s108 1469583168.558000
+Z7 !s107 C:/Users/Hpy/Desktop/FPGAProject/Training/EEPROM_I2CWR/simulation/modelsim/EEPROM_I2CWR.vt|
+Z8 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Hpy/Desktop/FPGAProject/Training/EEPROM_I2CWR/simulation/modelsim|C:/Users/Hpy/Desktop/FPGAProject/Training/EEPROM_I2CWR/simulation/modelsim/EEPROM_I2CWR.vt|
+!s101 -O0
+Z9 o-vlog01compat -work work -O0
+Z10 !s92 -vlog01compat -work work +incdir+C:/Users/Hpy/Desktop/FPGAProject/Training/EEPROM_I2CWR/simulation/modelsim -O0
+n@e@e@p@r@o@m
+vEEPROM_I2CWR
+I9lEJ`T]8HcONhY`f9fj4e2
+VUL8^SSERBgPSe`@JimY4W2
+R1
+w1469522566
+8C:/Users/Hpy/Desktop/FPGAProject/Training/EEPROM_I2CWR/EEPROM_I2CWR.v
+FC:/Users/Hpy/Desktop/FPGAProject/Training/EEPROM_I2CWR/EEPROM_I2CWR.v
+L0 30
+R5
+r1
+31
+R9
+n@e@e@p@r@o@m_@i2@c@w@r
+!i10b 1
+!s100 6m>gLdVnMT[Q2zDYEQR_]3
+!s85 0
+!s108 1469583168.428000
+!s107 C:/Users/Hpy/Desktop/FPGAProject/Training/EEPROM_I2CWR/EEPROM_I2CWR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Hpy/Desktop/FPGAProject/Training/EEPROM_I2CWR|C:/Users/Hpy/Desktop/FPGAProject/Training/EEPROM_I2CWR/EEPROM_I2CWR.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/Hpy/Desktop/FPGAProject/Training/EEPROM_I2CWR -O0
+vEEPROM_I2CWR_vlg_tst
+!i10b 1
+!s100 RYVW:1k7?@n[^LoGe=]h60
+IYgfSEfN1;l_jkHfm4T1kZ3
+VE_Sz`DVK]K?;>kL5JNb^E3
+R1
+R2
+R3
+R4
+L0 30
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+R10
+n@e@e@p@r@o@m_@i2@c@w@r_vlg_tst
+vSignal
+!i10b 1
+!s100 3^R>eZI^hN?PM2e4HMZko3
+IUT1A9U3IJT]YKXV5J^i^V2
+V[WW_ADY2e8?ASEXH1XWnG0
+R1
+R2
+R3
+R4
+L0 240
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+R10
+n@signal

@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2/fbosc2.v
+source_file = 1, C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2/db/fbosc2.cbx.xml
+design_name = fbosc2
+instance = comp, \y1~output , y1~output, fbosc2, 1
+instance = comp, \y2~output , y2~output, fbosc2, 1
+instance = comp, \clk~input , clk~input, fbosc2, 1
+instance = comp, \clk~inputclkctrl , clk~inputclkctrl, fbosc2, 1
+instance = comp, \y2~0 , y2~0, fbosc2, 1
+instance = comp, \rst~input , rst~input, fbosc2, 1
+instance = comp, \rst~inputclkctrl , rst~inputclkctrl, fbosc2, 1
+instance = comp, \y2~reg0 , y2~reg0, fbosc2, 1
+instance = comp, \y1~0 , y1~0, fbosc2, 1
+instance = comp, \y1~reg0 , y1~reg0, fbosc2, 1

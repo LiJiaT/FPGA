@@ -1,0 +1,8 @@
+|fbosc1
+clk => ~NO_FANOUT~
+rst => y2.OUTPUTSELECT
+rst => y1.OUTPUTSELECT
+y1 <= y1.DB_MAX_OUTPUT_PORT_TYPE
+y2 <= y2.DB_MAX_OUTPUT_PORT_TYPE
+
+

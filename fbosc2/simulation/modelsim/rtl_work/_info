@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Hpy\Desktop\FPGAProject\Training\fbosc2\simulation\modelsim
+vfbosc2
+IMd`eE0V]9b:L55n>HNDl21
+VJ^zB?]cVWBH@b[aYDDUcW3
+Z1 dC:\Users\Hpy\Desktop\FPGAProject\Training\fbosc2\simulation\modelsim
+w1469000668
+8C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2/fbosc2.v
+FC:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2/fbosc2.v
+L0 30
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 ELfl[4T1F5EVJ2IYk_bX_2
+!s85 0
+!s108 1469000730.370000
+!s107 C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2/fbosc2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2|-O0|C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2/fbosc2.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2 -O0
+vfbosc2_vlg_tst
+!i10b 1
+!s100 >1h87``4Ne4_j[Zom`kXb2
+I6b3=>FJ7jU^1TRWEo94]Q0
+V6=J8ci_M7YJ3Md=]EDUQ`0
+R1
+w1468999916
+8C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2/simulation/modelsim/fbosc2.vt
+FC:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2/simulation/modelsim/fbosc2.vt
+L0 28
+R2
+r1
+!s85 0
+31
+!s108 1469000730.500000
+!s107 C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2/simulation/modelsim/fbosc2.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2/simulation/modelsim|-O0|C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2/simulation/modelsim/fbosc2.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc2/simulation/modelsim -O0

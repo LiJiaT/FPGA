@@ -1,0 +1,8 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc1/fbosc1.v
+source_file = 1, C:/Users/Hpy/Desktop/FPGAProject/Training/fbosc1/db/fbosc1.cbx.xml
+design_name = fbosc1
+instance = comp, \y1~output , y1~output, fbosc1, 1
+instance = comp, \y2~output , y2~output, fbosc1, 1
+instance = comp, \rst~input , rst~input, fbosc1, 1
+instance = comp, \clk~input , clk~input, fbosc1, 1
